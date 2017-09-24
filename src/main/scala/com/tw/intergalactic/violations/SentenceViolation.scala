@@ -1,0 +1,8 @@
+package com.tw.intergalactic.violations
+
+sealed trait SentenceViolation extends Violation
+
+object UnrecognisedSentence extends SentenceViolation
+object UnrecognisedAlienNumber extends SentenceViolation
+object InvalidMetalName extends SentenceViolation
+object MissingData extends SentenceViolation
