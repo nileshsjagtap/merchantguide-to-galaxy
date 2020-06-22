@@ -1,22 +1,26 @@
-[0m[[0mdebug[0m] [0mRunning TaskDef(com.tw.intergalactic.core.AlienLanguageSpec, org.scalatest.tools.Framework$$anon$1@28b599e6, false, [SuiteSelector])[0m
-[0m[[0mdebug[0m] [0mRunning TaskDef(com.tw.intergalactic.core.MetalDictionarySpec, org.scalatest.tools.Framework$$anon$1@28b599e6, false, [SuiteSelector])[0m
-[0m[[0mdebug[0m] [0mRunning TaskDef(com.tw.intergalactic.utils.TextWriterSpec, org.scalatest.tools.Framework$$anon$1@28b599e6, false, [SuiteSelector])[0m
-[0m[[0mdebug[0m] [0mRunning TaskDef(com.tw.intergalactic.CalculatorSpec, org.scalatest.tools.Framework$$anon$1@28b599e6, false, [SuiteSelector])[0m
-[0m[[0mdebug[0m] [0mRunning TaskDef(com.tw.intergalactic.ParserSpec, org.scalatest.tools.Framework$$anon$1@28b599e6, false, [SuiteSelector])[0m
-[0m[[0mdebug[0m] [0mRunning TaskDef(com.tw.intergalactic.utils.TextReaderSpec, org.scalatest.tools.Framework$$anon$1@28b599e6, false, [SuiteSelector])[0m
-[0m[[0mdebug[0m] [0mRunning TaskDef(com.tw.intergalactic.IntegrationSpec, org.scalatest.tools.Framework$$anon$1@28b599e6, false, [SuiteSelector])[0m
-[0m[[0mdebug[0m] [0mRunning TaskDef(com.tw.intergalactic.core.RomanNumberSpec, org.scalatest.tools.Framework$$anon$1@28b599e6, false, [SuiteSelector])[0m
-[0m[[0minfo[0m] [0m[36mRun completed in 294 milliseconds.[0m[0m
-[0m[[0minfo[0m] [0m[36mTotal number of tests run: 32[0m[0m
-[0m[[0minfo[0m] [0m[36mSuites: completed 8, aborted 0[0m[0m
-[0m[[0minfo[0m] [0m[36mTests: succeeded 32, failed 0, canceled 0, ignored 0, pending 0[0m[0m
+[0m[[0mdebug[0m] [0mRunning TaskDef(com.tw.SentenceParserSpec, org.scalatest.tools.Framework$$anon$1@7004fcf3, false, [SuiteSelector])[0m
+[0m[[0mdebug[0m] [0mRunning TaskDef(com.tw.domain.AlienNumberSpec, org.scalatest.tools.Framework$$anon$1@7004fcf3, false, [SuiteSelector])[0m
+[0m[[0mdebug[0m] [0mRunning TaskDef(com.tw.core.LessThanSpec, org.scalatest.tools.Framework$$anon$1@7004fcf3, false, [SuiteSelector])[0m
+[0m[[0mdebug[0m] [0mRunning TaskDef(com.tw.domain.MetalSpec, org.scalatest.tools.Framework$$anon$1@7004fcf3, false, [SuiteSelector])[0m
+[0m[[0mdebug[0m] [0mRunning TaskDef(com.tw.core.LessThanEqualSpec, org.scalatest.tools.Framework$$anon$1@7004fcf3, false, [SuiteSelector])[0m
+[0m[[0mdebug[0m] [0mRunning TaskDef(com.tw.domain.RomanNumeralSpec, org.scalatest.tools.Framework$$anon$1@7004fcf3, false, [SuiteSelector])[0m
+[0m[[0mdebug[0m] [0mRunning TaskDef(com.tw.core.SequenceableSpec, org.scalatest.tools.Framework$$anon$1@7004fcf3, false, [SuiteSelector])[0m
+[0m[[0mdebug[0m] [0mRunning TaskDef(com.tw.domain.RomanNumberSpec, org.scalatest.tools.Framework$$anon$1@7004fcf3, false, [SuiteSelector])[0m
+[0m[[0mdebug[0m] [0mRunning TaskDef(com.tw.domain.InterGalacticCalculatorSpec, org.scalatest.tools.Framework$$anon$1@7004fcf3, false, [SuiteSelector])[0m
+[0m[[0mdebug[0m] [0mRunning TaskDef(com.tw.IntegrationSpec, org.scalatest.tools.Framework$$anon$1@7004fcf3, false, [SuiteSelector])[0m
+[0m[[0minfo[0m] [0m[36mRun completed in 413 milliseconds.[0m[0m
+[0m[[0minfo[0m] [0m[36mTotal number of tests run: 76[0m[0m
+[0m[[0minfo[0m] [0m[36mSuites: completed 10, aborted 0[0m[0m
+[0m[[0minfo[0m] [0m[36mTests: succeeded 76, failed 0, canceled 0, ignored 0, pending 0[0m[0m
 [0m[[0minfo[0m] [0m[32mAll tests passed.[0m[0m
 [0m[[0mdebug[0m] [0mPassed tests:[0m
-[0m[[0mdebug[0m] [0m	com.tw.intergalactic.ParserSpec[0m
-[0m[[0mdebug[0m] [0m	com.tw.intergalactic.IntegrationSpec[0m
-[0m[[0mdebug[0m] [0m	com.tw.intergalactic.core.AlienLanguageSpec[0m
-[0m[[0mdebug[0m] [0m	com.tw.intergalactic.core.RomanNumberSpec[0m
-[0m[[0mdebug[0m] [0m	com.tw.intergalactic.utils.TextReaderSpec[0m
-[0m[[0mdebug[0m] [0m	com.tw.intergalactic.utils.TextWriterSpec[0m
-[0m[[0mdebug[0m] [0m	com.tw.intergalactic.core.MetalDictionarySpec[0m
-[0m[[0mdebug[0m] [0m	com.tw.intergalactic.CalculatorSpec[0m
+[0m[[0mdebug[0m] [0m	com.tw.domain.RomanNumberSpec[0m
+[0m[[0mdebug[0m] [0m	com.tw.domain.RomanNumeralSpec[0m
+[0m[[0mdebug[0m] [0m	com.tw.IntegrationSpec[0m
+[0m[[0mdebug[0m] [0m	com.tw.core.LessThanSpec[0m
+[0m[[0mdebug[0m] [0m	com.tw.core.LessThanEqualSpec[0m
+[0m[[0mdebug[0m] [0m	com.tw.SentenceParserSpec[0m
+[0m[[0mdebug[0m] [0m	com.tw.domain.AlienNumberSpec[0m
+[0m[[0mdebug[0m] [0m	com.tw.domain.InterGalacticCalculatorSpec[0m
+[0m[[0mdebug[0m] [0m	com.tw.domain.MetalSpec[0m
+[0m[[0mdebug[0m] [0m	com.tw.core.SequenceableSpec[0m

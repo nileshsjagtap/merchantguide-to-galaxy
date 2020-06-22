@@ -1,5 +1,0 @@
-[0m[[0minfo[0m] [0m[32mRomanNumberUtilsTest:[0m[0m
-[0m[[0minfo[0m] [0m[32mRoman Number Evaluator[0m[0m
-[0m[[0minfo[0m] [0m[32m- should give corresponding number in case [0m[0m
-[0m[[0minfo[0m] [0m[32m- should give error in case of repeated roman literals[0m[0m
-[0m[[0minfo[0m] [0m[32m- should give error in case of invalid subtractions [0m[0m

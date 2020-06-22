@@ -2,21 +2,27 @@
 
 ## Solution
 
+* A solution based on a simple yet seamless combination of `Object Oriented Programming` and `Function Programming` paradigms since `Scala` has powerful support for both
+
 **Domain Objects**
 
-* `AlienLanguage` class holds map of numbers used for intergalactic transactions and corresponding roman numeral.
-* `MetalDictionary` class holds list of metals each describing metal name and its price per unit.
-* `RomanNumber` object holding all info related to roman numbers and calculate corresponding arabic values.
-* `Sentence` trait which assists in describing sentences. 
+* `RomanNumeral` - Sum Type ADT to describe a Roman Numeral
+* `RomanNumber` - Product Type ADT to describe a list of Roman Numerals
+* `AlienNumber` - Product Type ADT to describe an Alien Number containing token and roman numeral
+* `AlienNumbers` - Product Type ADT to describe a list of Alien Numbers
+* `Metal` - Product Type ADT to describe a metal containing metal name and per unit value
+* `Metals` - Product Type ADT to describe a list of Metals
+* `Sentence` - Sum Type ADT to describe all sentences
+* `Error` - Sum Type ADT to describe all error conditions
+* `InterGalacticCalculator` - Product Type ADT to generate answers to the questions and convert them to text
 
 **Other Classes**
-* `TextReader` for reading from input file.
-* `TextWriter` for writing to output file.
-* `Calculator` for performing calculations on transactions.
-* `Parser` for parsing and validating input sentences.
-* `SentenceExtractor` objects for evaluating sentences and extracting information.  
-* `Validator`for validating contents of sentences parsed.
-* `InterGalacticCalc` class for accepting input statements, creating domain objects and finding answers to questions.
+* `LessThan` - a simple `Type Class` which enables ADTs to perform less than check operation
+* `LessThanEqual` - a simple `Type Class` which enables ADTs to perform less than equals check operation
+* `Syntax` - a trait where all implicit classes for type class syntax are present
+* `SentenceParser` - assists in parsing sentences.
+* `Sequenceable` - a trait which enables ADTs to perform sequence operation
+* `AppImplicits` - an object where all implicits are placed under one roof
 
 **Algorithm details**
 
@@ -32,25 +38,23 @@
   * `AlienNumberQuestion` input sentence which describes question related to alien number e.g. `how much is pish tegj glob glob ?`
   * `MetalQuestion` input sentence which describes question related to metal e.g. `how many Credits is glob prok Gold ?`
   * `UnrecognisedQuestion` input sentence which is unrelated to domain e.g. `how much wood could a woodchuck chuck if a woodchuck ?`
-* `SentenceViolations` and `RomanNumberViolation` are managed using simple `algebraic types`
-* `SentenceExtractor` are used to validate and extract information from input Sentences. For each type of sentence has a specific extractor. Each extractor maintains link to next extractor in sequence, so as to chain them one after another.
-* `RomanNumberValidations` are also chained one after another, which makes adding more validations simple by just creating a validation and prepending it in the chain.
-* `Calculator` accepts Alien Language and Metal Dictionary objects and performs calculations around it.
-* `TextWriter` is used for writing output data in text format to a file.
-* In future, one should easily be able to create another writer to write output data in another format.
+* All `Error` conditions are managed using simple `algebraic data types`
+* `InterGalacticCalculator` accepts Alien Numbers and Metals objects and performs calculations around it.
 
 ## Parsing
 * Simple regular expressions and string split operations are used.
 
 ## Tests
-* `AlienLanguageSpec` : contains tests to validate creation of domain objects .
-* `MetalDictionarySpec` : contains tests for validating creation of metal objects.
-* `ParserSpec` contains tests for parsing and validating the input sentences .
+* `RomanNumeralSpec` contains tests to validate creation and behaviour of `RomanNumeral`.
+* `RomanNumberSpec` contains tests to validate creation and behaviour of `RomanNumber`.
+* `AlienNumberSpec` : contains tests to validate creation and behaviour of `AlienNumber` and `AlienNumbers`.
+* `MetalSpec` : contains tests for validating creation and behaviour of `Metal` and `Metals`.
+* `SentenceParserSpec` contains tests for parsing the input sentences .
+* `InterGalacticCalculatorSpec` contains tests to validate the calculations performed on domain objects.
 * `IntegrationSpec` contains tests to check integration of various modules.
-* `CalculatorSpec` contains tests to validate the calculations performed on domain objects.
-* `RomanNumberUtilsSpec` contains tests to validate and evaluate corresponding roman number.
-* `TextReaderSpec` contains tests for reading lines from input file.
-* `TextWriterSpec` contains tests for writing output lines to output file.
+* `LessThanSpec` contains tests to check validity of laws applicable to various instances of `LessThan` type class.
+* `LessThanEqualSpec` contains tests to check validity of laws applicable to various instances of `LessThanEqual` type class.
+* `SequenceableSpec` contains tests to validate the functionality of sequence operation
 
 ## Things which can be considered (improvements)
 
@@ -58,10 +62,6 @@
 
 ## Others Highlights
 * One of the major reason for using `Scala 2.12` because it gave flatMap on Either one of the sweet things.
-* package object contains below type alias 
-    1. `Questions` for a list of Sentences
-    2. `Answers` for a list of Sentences
-    3. `Sentences` for a list of input String
 * All function doing recursion are mostly tailRec
 
 ## How to run the application

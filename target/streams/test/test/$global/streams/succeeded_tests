@@ -1,23 +1,17 @@
 #Successful Tests
-#Mon Sep 25 02:56:17 IST 2017
-com.tw.intergalactic.CalculatorSpec=1506288377759
-com.tw.intergalactic.AlienCalculatorSpec=1506245185207
-com.tw.intergalactic.ParserSpec=1506288377787
-com.tw.intergalactic.utils.TextWriterTest=1506231649333
-com.tw.intergalactic.utils.RomanNumberUtilsTest=1506231649333
-com.tw.intergalactic.core.GalacticCalculatorTest=1506231649333
-com.tw.intergalactic.core.GalacticContextTest=1506231649333
-com.tw.intergalactic.core.AlienLanguageSpec=1506288377751
-com.tw.intergalactic.AlienLangContextSpec=1506245185207
-com.tw.intergalactic.core.RomanNumberSpec=1506288377750
-com.tw.intergalactic.GalacticCalculatorTest=1506229438409
-com.tw.intergalactic.ParserTest=1506231649333
-com.tw.intergalactic.TransactionContextSpec=1506242505497
-com.tw.intergalactic.utils.TextWriterSpec=1506288377752
-com.tw.intergalactic.utils.RomanNumberUtilsSpec=1506239485291
-com.tw.intergalactic.core.GalacticCalculatorSpec=1506239485291
-com.tw.intergalactic.core.GalacticContextSpec=1506239485291
-com.tw.intergalactic.core.MetalDictionarySpec=1506288377752
-com.tw.intergalactic.IntegrationSpec=1506288377766
-com.tw.intergalactic.GalacticContextTest=1506229438409
-com.tw.intergalactic.utils.TextReaderSpec=1506288377752
+#Mon Mar 18 02:22:27 IST 2019
+com.tw.core.SequenceableSpec=1552855947678
+com.tw.IntegrationSpec=1552855947797
+com.tw.core.RomanNumeralSpec=1552736908134
+com.tw.SentenceParserSpec=1552855947691
+com.tw.core.LessThanSpec=1552855947678
+com.tw.domain.InterGalacticCalculatorSpec=1552855947758
+com.tw.domain.AlienNumberSpec=1552855947682
+com.tw.core.RomanNumberSpec=1552736908155
+com.tw.core.MetalSpec=1552736908134
+com.tw.domain.RomanNumberSpec=1552855947737
+com.tw.domain.MetalSpec=1552855947687
+com.tw.core.AlienNumberSpec=1552736908147
+com.tw.domain.RomanNumeralSpec=1552855947678
+com.tw.core.InterGalacticCalculatorSpec=1552736908175
+com.tw.core.LessThanEqualSpec=1552855947678
